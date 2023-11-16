@@ -9,7 +9,7 @@
   --white: #f7f8fa;
   --font-size: 1.3rem;
   --mono: "Oxygen mono", monospace;
-  --sans: Oxygen, sans-serif;
+  --sans: "Oxygen", sans-serif;
 }
 /* border box model: https://css-tricks.com/box-sizing/ */
 html {
@@ -24,4 +24,70 @@ body {
   padding: 0;
   margin: 0;
   font-family: var(--sans);
+  background-color: var(--black);
+  color: var(--white);
+  font-size: var(--font-size);
+}
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+a {
+  color: var(--magenta);
+}
+a:hover {
+  color: var(--hotmag);
+  text-decoration: none;
+}
+/* INTRO styles */
+#intro {
+  padding-bottom: 10rem;
+}
+#intro p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+#intro .name {
+  font-family: var(--mono);
+}
+.name span {
+  font-family: var(--sans);
+  font-size: 4rem;
+  color: var(--aqua);
+  display: block;
+}
+#intro h2 {
+  font-size: 4rem;
+  font-weight: normal;
+}
+/* CONTACT ME */
+#contact-me {
+  background-color: var(--plum);
+  text-align: center;
+  padding: 3rem 0;
+}
+#contact-me h2 {
+  margin-bottom: 2rem;
+}
+#contact-me p {
+  width: 400px;
+  margin: 0 auto;
+}
+#contact-me .btn {
+  background-color: var(--magenta);
+  border: none;
+  padding: 0.5rem;
+  border-radius: 5px;
+  margin-top: 3rem;
+}
+#contact-me .btn:hover {
+  background-color: var(--hotmag);
+}
+#contact-me .btn a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.4rem;
+  letter-spacing: 1.5px;
+  font-family: var(--mon);
 }
