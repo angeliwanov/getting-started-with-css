@@ -62,32 +62,71 @@ a:hover {
   font-weight: normal;
 }
 /* CONTACT ME */
-#contact-me {
+#contact {
   background-color: var(--plum);
   text-align: center;
   padding: 3rem 0;
 }
-#contact-me h2 {
+#contact h2 {
   margin-bottom: 2rem;
 }
-#contact-me p {
+#contact p {
   width: 400px;
   margin: 0 auto;
 }
-#contact-me .btn {
+#contact .btn {
   background-color: var(--magenta);
   border: none;
   padding: 0.5rem;
   border-radius: 5px;
   margin-top: 3rem;
 }
-#contact-me .btn:hover {
+#contact .btn:hover {
   background-color: var(--hotmag);
 }
-#contact-me .btn a {
+#contact .btn a {
   color: white;
   text-decoration: none;
   font-size: 1.4rem;
   letter-spacing: 1.5px;
   font-family: var(--mon);
+}
+/* NAVIGATION */
+nav {
+  font-family: var(--mono);
+  font-size: 80%;
+}
+nav h1 a {
+  font-family: var(--sans);
+}
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+nav li:first-child {
+  flex-basis: 100%;
+  text-align: center;
+}
+nav [class*="fa-"] {
+  font-size: 150%;
+  color: var(--aqua);
+}
+nav h1 [class*="fa-"] {
+  font-size: 100%;
+  color: var(--aqua);
+}
+nav a {
+  color: var(--white);
+  text-decoration: none;
+  display: block;
+}
+nav a:hover,
+nav [class*="fa-"]:hover {
+  color: var(--magenta);
 }
