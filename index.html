@@ -13,45 +13,55 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <nav>
-      <ul>
-        <li>
-          <h1>
-            <a href="index.html">
-              <span class="fa-brands fa-react" aria-hidden="true"></span>
-              <span>Angel Ivanov</span>
+    <header>
+      <a class="hamburger" href="#navbar" aria-label="Open main menu">
+        <span class="sr-only">Open main menu</span>
+        <span class="fas fa-bars" aria-hidden="true"></span>
+      </a>
+      <nav id="navbar">
+        <ul>
+          <li>
+            <h1>
+              <a href="index.html">
+                <span class="fa-brands fa-react" aria-hidden="true"></span>
+                <span>Angel Ivanov</span>
+              </a>
+            </h1>
+          </li>
+          <li>
+            <a href="#projects">Projects</a>
+          </li>
+          <li>
+            <a href="about.html">About</a>
+          </li>
+          <li>
+            <a href="#contact">Contact</a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/angel-ivanov-fcca-cfa-pmp-63562883/"
+              target="_blank"
+            >
+              <span class="fa-brands fa-linkedin" aria-hidden="true"></span>
+              <span class="sr-only">LindedIn</span>
             </a>
-          </h1>
-        </li>
-        <li>
-          <a href="#projects">Projects</a>
-        </li>
-        <li>
-          <a href="about.html">About</a>
-        </li>
-        <li>
-          <a href="#contact">Contact</a>
-        </li>
-        <li>
-          <a
-            href="https://www.linkedin.com/in/angel-ivanov-fcca-cfa-pmp-63562883/"
-            target="_blank"
-          >
-            <span class="fa-brands fa-linkedin" aria-hidden="true"></span>
-            <span class="sr-only">LindedIn</span>
-          </a>
-        </li>
-        <li>
-          <a href="https://github.com/angeliwanov" target="_blank">
-            <span class="fa-brands fa-github" aria-hidden="true"></span>
-            <span class="sr-only">Github</span>
-          </a>
-        </li>
-        <li>
-          <a href="#" class="button">Resume</a>
-        </li>
-      </ul>
-    </nav>
+          </li>
+          <li>
+            <a href="https://github.com/angeliwanov" target="_blank">
+              <span class="fa-brands fa-github" aria-hidden="true"></span>
+              <span class="sr-only">Github</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="button">Resume</a>
+          </li>
+        </ul>
+        <a class="close" href="#" aria-label="Close main menu">
+          <span class="sr-only">Close main menu</span>
+          <span class="fas fa-times" aria-hidden="true"></span>
+        </a>
+      </nav>
+    </header>
     <section id="intro">
       <p class="name">Hi, my name is <span>Angel Ivanov.</span></p>
       <h2>I am a fullstack web developer.</h2>
@@ -155,7 +165,22 @@
           I'm always interested in hearing about new job opportunities in
           front-end development.
         </p>
-        <a class="button" href="mailto:angel.iwanov@gmail.com">Email me</a>
+        <!-- <a class="button" href="mailto:angel.iwanov@gmail.com">Email me</a> -->
+        <form class="form" action="POST">
+          <div>
+            <label for="name">Name</label>
+            <input type="text" id="name" />
+          </div>
+          <div>
+            <label for="email">Email</label>
+            <input type="email" id="email" />
+          </div>
+          <div>
+            <label for="phone">Phone</label>
+            <input type="text" id="phone" />
+          </div>
+          <button class="button">Submit</button>
+        </form>
       </section>
     </div>
     <div class="gradient"></div>
